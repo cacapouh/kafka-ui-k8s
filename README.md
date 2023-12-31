@@ -50,3 +50,12 @@ If you don't see a command prompt, try pressing enter.
 Hello strimzi!
 Hoge!
 ```
+
+# kafka-uiのセットアップ
+
+参考: https://gist.github.com/ashishmaurya/e192cdf44fdeeb459f0bfa09877dee22
+
+```
+kubectl apply -n kafka -f kafka-ui.yml
+minikube service kafka-ui-service -n kafka
+```
